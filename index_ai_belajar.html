@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IntroducingAI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1e2a45;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #162035;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a, nav select {
+      color: #fff;
+      background: #162035;
+      border: none;
+      margin: 10px 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+      font-size: 1em;
+    }
+    nav a:hover {
+      color: #00c3ff;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      color: #1e2a45;
+      margin-bottom: 15px;
+    }
+    p, li {
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #1e2a45;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 data-key="main_title">Pemanfaatan AI di Zaman Ini</h1>
+    <p data-key="main_subtitle">Bagaimana Kecerdasan Buatan Mengubah Dunia Modern</p>
+  </header>
+
+  <nav>
+    <a href="#pengantar" data-key="nav_intro">Pengantar</a>
+    <a href="#manfaat" data-key="nav_benefit">Manfaat</a>
+    <a href="#contoh" data-key="nav_example">Contoh AI</a>
+    <a href="#cara-kerja" data-key="nav_how">Cara Kerja</a>
+    <a href="#penutup" data-key="nav_end">Penutup</a>
+    <select id="lang-switcher">
+      <option value="id">🇮🇩 ID</option>
+      <option value="en">🇬🇧 EN</option>
+    </select>
+  </nav>
+
+  <main>
+    <section id="pengantar">
+      <h2 data-key="section_intro_title">Apa Itu AI?</h2>
+      <p data-key="section_intro_content">
+        Kecerdasan Buatan (Artificial Intelligence) adalah kemampuan mesin untuk belajar dan menyelesaikan tugas-tugas kompleks yang biasanya memerlukan kecerdasan manusia. AI kini telah hadir dalam kehidupan sehari-hari, dari smartphone hingga industri.
+      </p>
+    </section>
+
+    <section id="manfaat">
+      <h2 data-key="section_benefit_title">Manfaat Kecerdasan Buatan</h2>
+      <div class="card-grid">
+        <div class="card"><h3 data-key="benefit_health">Kesehatan</h3><p data-key="benefit_health_desc">Deteksi dini penyakit, analisis hasil lab, dan asisten medis pintar.</p></div>
+        <div class="card"><h3 data-key="benefit_transport">Transportasi</h3><p data-key="benefit_transport_desc">Mobil otonom dan sistem navigasi berbasis AI meningkatkan keselamatan.</p></div>
+        <div class="card"><h3 data-key="benefit_edu">Pendidikan</h3><p data-key="benefit_edu_desc">Platform belajar adaptif, penilaian otomatis, dan tutor virtual.</p></div>
+        <div class="card"><h3 data-key="benefit_fin">Keuangan</h3><p data-key="benefit_fin_desc">AI digunakan untuk analisis pasar, prediksi saham, dan deteksi penipuan.</p></div>
+        <div class="card"><h3 data-key="benefit_ent">Hiburan</h3><p data-key="benefit_ent_desc">AI memberi rekomendasi film, musik, bahkan membuat konten sendiri.</p></div>
+        <div class="card"><h3 data-key="benefit_sec">Keamanan</h3><p data-key="benefit_sec_desc">Sistem pengenalan wajah, analisis ancaman, dan deteksi pelanggaran.</p></div>
+      </div>
+    </section>
+
+    <section id="contoh">
+      <h2 data-key="section_example_title">Contoh AI Terkenal di Dunia</h2>
+      <ul>
+        <li><b>ChatGPT</b> - <span data-key="example_chatgpt">Chatbot berbasis teks dari OpenAI.</span></li>
+        <li><b>DALL·E</b> - <span data-key="example_dalle">AI pembuat gambar dari teks.</span></li>
+        <li><b>Tesla Autopilot</b> - <span data-key="example_tesla">Sistem mengemudi otomatis.</span></li>
+        <li><b>Google Bard</b> - <span data-key="example_bard">AI generatif dari Google.</span></li>
+        <li><b>MidJourney</b> - <span data-key="example_mid">AI kreatif untuk menghasilkan ilustrasi visual.</span></li>
+        <li><b>DeepMind AlphaFold</b> - <span data-key="example_fold">AI untuk memetakan struktur protein.</span></li>
+      </ul>
+    </section>
+
+    <section id="cara-kerja">
+      <h2 data-key="section_how_title">Bagaimana AI Bekerja?</h2>
+      <ol>
+        <li><b>Data Input:</b> <span data-key="how_input">AI menerima data mentah seperti teks, gambar, atau suara.</span></li>
+        <li><b>Pelatihan Model:</b> <span data-key="how_train">Model AI dilatih dengan data menggunakan algoritma pembelajaran mesin (machine learning).</span></li>
+        <li><b>Evaluasi & Output:</b> <span data-key="how_output">Setelah dilatih, AI menghasilkan output berupa prediksi, jawaban, atau visual.</span></li>
+        <li><b>Peningkatan:</b> <span data-key="how_improve">Sistem terus belajar melalui umpan balik dan iterasi.</span></li>
+      </ol>
+    </section>
+
+    <section id="penutup">
+      <h2 data-key="section_end_title">Kesimpulan</h2>
+      <p data-key="section_end_content">AI adalah teknologi yang berperan penting di era digital. Dengan perkembangan yang cepat, AI bisa membantu banyak sektor kehidupan jika digunakan secara etis dan bertanggung jawab.</p>
+    </section>
+  
+    <section id="belajar-ai">
+      <h2 data-key="section_learn_title">Hal yang Harus Dipelajari untuk Mengenal AI</h2>
+      <ol>
+        <li><b data-key="learn_math">Matematika Dasar dan Statistik:</b> <span data-key="learn_math_desc">Untuk memahami algoritma AI, pemahaman tentang aljabar linier, kalkulus, dan probabilitas sangat penting. Statistik membantu dalam menganalisis data, menghitung distribusi, dan menentukan signifikansi dari hasil yang diperoleh model AI.</span></li>
+        <li><b data-key="learn_programming">Pemrograman:</b> <span data-key="learn_programming_desc">Bahasa seperti Python sangat umum digunakan dalam AI karena banyaknya pustaka (library) seperti TensorFlow, PyTorch, dan Scikit-Learn. Kemampuan coding sangat dibutuhkan untuk membuat, melatih, dan menguji model AI.</span></li>
+        <li><b data-key="learn_data">Pengolahan Data:</b> <span data-key="learn_data_desc">AI bekerja dengan data. Maka, kemampuan untuk mengumpulkan, membersihkan, memvisualisasikan, dan menganalisis data sangat penting. Ini termasuk pemahaman tentang format data, SQL, dan manipulasi data menggunakan pandas atau NumPy.</span></li>
+        <li><b data-key="learn_ml">Pembelajaran Mesin (Machine Learning):</b> <span data-key="learn_ml_desc">ML adalah inti dari banyak sistem AI. Memahami konsep supervised learning, unsupervised learning, reinforcement learning, dan algoritma seperti decision tree, SVM, dan neural network sangatlah krusial.</span></li>
+        <li><b data-key="learn_ai_ethics">Etika dan Dampak Sosial:</b> <span data-key="learn_ai_ethics_desc">Penting untuk memahami dampak sosial dari AI seperti privasi, bias algoritma, dan tanggung jawab etis dalam membangun sistem AI agar tidak disalahgunakan atau merugikan masyarakat.</span></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 - Website Edukasi AI | Dibuat oleh [Salman Rafif]
+  </footer>
+
+  <script>
+    const translations = {
+      id: {
+        main_title: "Pemanfaatan AI di Zaman Ini",
+        main_subtitle: "Bagaimana Kecerdasan Buatan Mengubah Dunia Modern",
+        nav_intro: "Pengantar",
+        nav_benefit: "Manfaat",
+        nav_example: "Contoh AI",
+        nav_how: "Cara Kerja",
+        nav_end: "Penutup",
+        section_intro_title: "Apa Itu AI?",
+        section_intro_content: "Kecerdasan Buatan (Artificial Intelligence) adalah kemampuan mesin untuk belajar dan menyelesaikan tugas-tugas kompleks yang biasanya memerlukan kecerdasan manusia. AI kini telah hadir dalam kehidupan sehari-hari, dari smartphone hingga industri.",
+        section_benefit_title: "Manfaat Kecerdasan Buatan",
+        benefit_health: "Kesehatan",
+        benefit_health_desc: "Deteksi dini penyakit, analisis hasil lab, dan asisten medis pintar.",
+        benefit_transport: "Transportasi",
+        benefit_transport_desc: "Mobil otonom dan sistem navigasi berbasis AI meningkatkan keselamatan.",
+        benefit_edu: "Pendidikan",
+        benefit_edu_desc: "Platform belajar adaptif, penilaian otomatis, dan tutor virtual.",
+        benefit_fin: "Keuangan",
+        benefit_fin_desc: "AI digunakan untuk analisis pasar, prediksi saham, dan deteksi penipuan.",
+        benefit_ent: "Hiburan",
+        benefit_ent_desc: "AI memberi rekomendasi film, musik, bahkan membuat konten sendiri.",
+        benefit_sec: "Keamanan",
+        benefit_sec_desc: "Sistem pengenalan wajah, analisis ancaman, dan deteksi pelanggaran.",
+        section_example_title: "Contoh AI Terkenal di Dunia",
+        example_chatgpt: "Chatbot berbasis teks dari OpenAI.",
+        example_dalle: "AI pembuat gambar dari teks.",
+        example_tesla: "Sistem mengemudi otomatis.",
+        example_bard: "AI generatif dari Google.",
+        example_mid: "AI kreatif untuk menghasilkan ilustrasi visual.",
+        example_fold: "AI untuk memetakan struktur protein.",
+        section_how_title: "Bagaimana AI Bekerja?",
+        how_input: "AI menerima data mentah seperti teks, gambar, atau suara.",
+        how_train: "Model AI dilatih dengan data menggunakan algoritma pembelajaran mesin (machine learning).",
+        how_output: "Setelah dilatih, AI menghasilkan output berupa prediksi, jawaban, atau visual.",
+        how_improve: "Sistem terus belajar melalui umpan balik dan iterasi.",
+        section_end_title: "Kesimpulan",
+        section_end_content: "AI adalah teknologi yang berperan penting di era digital. Dengan perkembangan yang cepat, AI bisa membantu banyak sektor kehidupan jika digunakan secara etis dan bertanggung jawab.",
+        section_learn_title: "Hal yang Harus Dipelajari untuk Mengenal AI",
+        learn_math: "Matematika Dasar dan Statistik:",
+        learn_math_desc: "Untuk memahami algoritma AI, pemahaman tentang aljabar linier, kalkulus, dan probabilitas sangat penting. Statistik membantu dalam menganalisis data, menghitung distribusi, dan menentukan signifikansi dari hasil yang diperoleh model AI.",
+        learn_programming: "Pemrograman:",
+        learn_programming_desc: "Bahasa seperti Python sangat umum digunakan dalam AI karena banyaknya pustaka (library) seperti TensorFlow, PyTorch, dan Scikit-Learn. Kemampuan coding sangat dibutuhkan untuk membuat, melatih, dan menguji model AI.",
+        learn_data: "Pengolahan Data:",
+        learn_data_desc: "AI bekerja dengan data. Maka, kemampuan untuk mengumpulkan, membersihkan, memvisualisasikan, dan menganalisis data sangat penting. Ini termasuk pemahaman tentang format data, SQL, dan manipulasi data menggunakan pandas atau NumPy.",
+        learn_ml: "Pembelajaran Mesin (Machine Learning):",
+        learn_ml_desc: "ML adalah inti dari banyak sistem AI. Memahami konsep supervised learning, unsupervised learning, reinforcement learning, dan algoritma seperti decision tree, SVM, dan neural network sangatlah krusial.",
+        learn_ai_ethics: "Etika dan Dampak Sosial:",
+        learn_ai_ethics_desc: "Penting untuk memahami dampak sosial dari AI seperti privasi, bias algoritma, dan tanggung jawab etis dalam membangun sistem AI agar tidak disalahgunakan atau merugikan masyarakat."
+      },
+      en: {
+        main_title: "The Use of AI in Our Era",
+        main_subtitle: "How Artificial Intelligence is Transforming the Modern World",
+        nav_intro: "Introduction",
+        nav_benefit: "Benefits",
+        nav_example: "AI Examples",
+        nav_how: "How It Works",
+        nav_end: "Conclusion",
+        section_intro_title: "What is AI?",
+        section_intro_content: "Artificial Intelligence (AI) is the ability of machines to learn and perform complex tasks that usually require human intelligence. AI is now present in everyday life, from smartphones to industry.",
+        section_benefit_title: "Benefits of Artificial Intelligence",
+        benefit_health: "Health",
+        benefit_health_desc: "Early disease detection, lab result analysis, and smart medical assistants.",
+        benefit_transport: "Transportation",
+        benefit_transport_desc: "Autonomous cars and AI-based navigation systems improve safety.",
+        benefit_edu: "Education",
+        benefit_edu_desc: "Adaptive learning platforms, automated assessment, and virtual tutors.",
+        benefit_fin: "Finance",
+        benefit_fin_desc: "AI is used for market analysis, stock predictions, and fraud detection.",
+        benefit_ent: "Entertainment",
+        benefit_ent_desc: "AI recommends movies, music, and even creates content.",
+        benefit_sec: "Security",
+        benefit_sec_desc: "Facial recognition systems, threat analysis, and violation detection.",
+        section_example_title: "Famous AI Examples Worldwide",
+        example_chatgpt: "Text-based chatbot from OpenAI.",
+        example_dalle: "Image-generating AI from text.",
+        example_tesla: "Autonomous driving system.",
+        example_bard: "Generative AI from Google.",
+        example_mid: "Creative AI for generating visual illustrations.",
+        example_fold: "AI to map protein structures.",
+        section_how_title: "How AI Works?",
+        how_input: "AI receives raw data such as text, images, or sound.",
+        how_train: "AI models are trained with data using machine learning algorithms.",
+        how_output: "Once trained, AI produces output such as predictions, answers, or visuals.",
+        how_improve: "The system keeps learning through feedback and iteration.",
+        section_end_title: "Conclusion",
+        section_end_content: "AI is a key technology in the digital era. With rapid development, AI can benefit many life sectors if used ethically and responsibly.",
+        section_learn_title: "What You Should Learn to Understand AI",
+        learn_math: "Basic Math and Statistics:",
+        learn_math_desc: "To understand AI algorithms, knowledge of linear algebra, calculus, and probability is crucial. Statistics help analyze data, compute distributions, and determine the significance of model results.",
+        learn_programming: "Programming:",
+        learn_programming_desc: "Languages like Python are commonly used in AI due to extensive libraries such as TensorFlow, PyTorch, and Scikit-Learn. Coding skills are necessary to build, train, and evaluate AI models.",
+        learn_data: "Data Handling:",
+        learn_data_desc: "AI works with data. Therefore, the ability to collect, clean, visualize, and analyze data is critical. This includes knowledge of data formats, SQL, and data manipulation using pandas or NumPy.",
+        learn_ml: "Machine Learning:",
+        learn_ml_desc: "ML is the core of many AI systems. Understanding supervised learning, unsupervised learning, reinforcement learning, and algorithms like decision trees, SVMs, and neural networks is essential.",
+        learn_ai_ethics: "Ethics and Social Impact:",
+        learn_ai_ethics_desc: "It’s important to understand the social impacts of AI, such as privacy, algorithmic bias, and ethical responsibility in developing AI systems to prevent misuse or societal harm."
+      }
+    };
+
+    document.getElementById("lang-switcher").addEventListener("change", (e) => {
+      const lang = e.target.value;
+      document.querySelectorAll("[data-key]").forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
