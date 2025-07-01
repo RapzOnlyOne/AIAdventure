@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IntroducingAI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1e2a45;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #162035;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00c3ff;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      color: #1e2a45;
+      margin-bottom: 15px;
+    }
+    p, li {
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #1e2a45;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pemanfaatan AI di Zaman Ini</h1>
+    <p>Bagaimana Kecerdasan Buatan Mengubah Dunia Modern</p>
+  </header>
+
+  <nav>
+    <a href="#pengantar">Pengantar</a>
+    <a href="#manfaat">Manfaat</a>
+    <a href="#contoh">Contoh AI</a>
+    <a href="#cara-kerja">Cara Kerja</a>
+    <a href="#penutup">Penutup</a>
+  </nav>
+
+  <main>
+    <section id="pengantar">
+      <h2>Apa Itu AI?</h2>
+      <p>
+        Kecerdasan Buatan (Artificial Intelligence) adalah kemampuan mesin untuk belajar dan menyelesaikan tugas-tugas kompleks yang biasanya memerlukan kecerdasan manusia. AI kini telah hadir dalam kehidupan sehari-hari, dari smartphone hingga industri.
+      </p>
+    </section>
+
+    <section id="manfaat">
+      <h2>Manfaat Kecerdasan Buatan</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Kesehatan</h3><p>Deteksi dini penyakit, analisis hasil lab, dan asisten medis pintar.</p></div>
+        <div class="card"><h3>Transportasi</h3><p>Mobil otonom dan sistem navigasi berbasis AI meningkatkan keselamatan.</p></div>
+        <div class="card"><h3>Pendidikan</h3><p>Platform belajar adaptif, penilaian otomatis, dan tutor virtual.</p></div>
+        <div class="card"><h3>Keuangan</h3><p>AI digunakan untuk analisis pasar, prediksi saham, dan deteksi penipuan.</p></div>
+        <div class="card"><h3>Hiburan</h3><p>AI memberi rekomendasi film, musik, bahkan membuat konten sendiri.</p></div>
+        <div class="card"><h3>Keamanan</h3><p>Sistem pengenalan wajah, analisis ancaman, dan deteksi pelanggaran.</p></div>
+      </div>
+    </section>
+
+    <section id="contoh">
+      <h2>Contoh AI Terkenal di Dunia</h2>
+      <ul>
+        <li><b>ChatGPT</b> - Chatbot berbasis teks dari OpenAI.</li>
+        <li><b>DALL·E</b> - AI pembuat gambar dari teks.</li>
+        <li><b>Tesla Autopilot</b> - Sistem mengemudi otomatis.</li>
+        <li><b>Google Bard</b> - AI generatif dari Google.</li>
+        <li><b>MidJourney</b> - AI kreatif untuk menghasilkan ilustrasi visual.</li>
+        <li><b>DeepMind AlphaFold</b> - AI untuk memetakan struktur protein.</li>
+      </ul>
+    </section>
+
+    <section id="cara-kerja">
+      <h2>Bagaimana AI Bekerja?</h2>
+      <ol>
+        <li><b>Data Input:</b> AI menerima data mentah seperti teks, gambar, atau suara.</li>
+        <li><b>Pelatihan Model:</b> Model AI dilatih dengan data menggunakan algoritma pembelajaran mesin (machine learning).</li>
+        <li><b>Evaluasi & Output:</b> Setelah dilatih, AI menghasilkan output berupa prediksi, jawaban, atau visual.</li>
+        <li><b>Peningkatan:</b> Sistem terus belajar melalui umpan balik dan iterasi.</li>
+      </ol>
+    </section>
+
+    <section id="penutup">
+      <h2>Kesimpulan</h2>
+      <p>AI adalah teknologi yang berperan penting di era digital. Dengan perkembangan yang cepat, AI bisa membantu banyak sektor kehidupan jika digunakan secara etis dan bertanggung jawab.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 - Website Edukasi AI | Dibuat oleh [Salman Rafif]
+  </footer>
+
+</body>
+</html>
